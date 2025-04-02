@@ -15,7 +15,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<ProductList />} />
+          <Route path="/*" element={<ProductList />} />
           <Route path="/product/:productId" element={<ProductDetails />} />
         </Routes>
         {isCartModalOpen && <CartModal />}
